@@ -1,12 +1,12 @@
 ---
-import Time from "../icons/Time.astro"
-import { type Song } from "../lib/Song"
+import Time from "../icons/Time.astro";
+import { type Song } from "../lib/data";
 
 interface Props {
-  songs: Song[]
+  songs: Song[];
 }
 
-const { songs } = Astro.props
+const { songs } = Astro.props;
 ---
 
 <table class="table-auto text-left min-w-full divide-y divide-gray-500/20">
